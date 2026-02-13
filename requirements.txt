@@ -1,4 +1,3 @@
-python
 requests
 httpx
 google
@@ -14,4 +13,4 @@ cfonts
 aiohttp
 cfonts
 Flask
-python3
+python
