@@ -13,4 +13,3 @@ cfonts
 aiohttp
 cfonts
 Flask
-python
