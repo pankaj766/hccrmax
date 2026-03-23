@@ -437,7 +437,7 @@ def do_login():
 
     if discord_pw == "LPMOD" and telegram_pw == "LPMOD":
         session['logged_in'] = True
-        return jsonify({"status": "success", "redirect": "/index"})
+        return redirect(url_for('index_page'))
     else:
         return jsonify({"status": "error", "message": "Wrong password"}), 401
 
