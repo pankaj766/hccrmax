@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
-<title>LP MOD60 - Login</title>
+<title>HACKRMAX - Login</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -38,7 +38,7 @@ html,body{width:100%;overflow-x:hidden;background:var(--bg);color:var(--text);mi
 
 /* LOGO */
 .logo-wrap{text-align:center;margin-bottom:22px}
-.logo-shield{width:88px;height:88px;margin:0 auto 14px;background:radial-gradient(circle,#00e5ff14,transparent);border-radius:50%;border:2px solid var(--b2);display:flex;justify-content:center;align-items:center;animation:pulse 3s infinite ease-in-out}
+.logo-shield{width:120px;height:120px;margin:0 auto 14px;background:radial-gradient(circle,#00e5ff14,transparent);border-radius:50%;border:2px solid var(--b2);display:flex;justify-content:center;align-items:center;animation:pulse 3s infinite ease-in-out}
 @keyframes pulse{0%,100%{box-shadow:0 0 20px #00e5ff18;transform:scale(1)}50%{box-shadow:0 0 40px #00e5ff35;transform:scale(1.04)}}
 .logo-shield img{width:78%;height:78%;object-fit:contain;border-radius:50%}
 .logo-shield i{font-size:44px;color:var(--cyan)}
@@ -120,35 +120,18 @@ html,body{width:100%;overflow-x:hidden;background:var(--bg);color:var(--text);mi
 <div class="card">
   <div class="logo-wrap">
     <div class="logo-shield">
-      <img src="/static/images/t.gif" alt="LP MOD60"
+      <img src="/static/images/t.gif" alt="HACKRMAX"
            onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
       <i class="fas fa-bolt" style="display:none"></i>
     </div>
-    <div class="logo-title">LP MOD60</div>
+    <div class="logo-title">HACKRMAX</div>
     <div class="logo-sub">Free Fire Emote Sender</div>
   </div>
 
   <div class="admin-note">
-    <i class="fas fa-shield-alt"></i> App Admin: @lpmod60
+    <i class="fas fa-shield-alt"></i> App Admin: @HACKRMAX
   </div>
 
-  <!-- SOCIAL 4 BUTTONS -->
-  <div class="social-grid">
-    <a href="https://www.instagram.com/lpmod60" target="_blank" class="s-btn">
-      <i class="fab fa-instagram" style="color:#e1306c"></i><span>Instagram</span>
-    </a>
-    <a href="{{ youtube_url or 'https://www.youtube.com/@lpmod60' }}" target="_blank" class="s-btn">
-      <i class="fab fa-youtube" style="color:#f44336"></i><span>YouTube</span>
-    </a>
-    <a href="{{ telegram_url or 'https://t.me/lpmod60' }}" target="_blank" class="s-btn">
-      <i class="fab fa-telegram" style="color:#29b6f6"></i><span>Telegram</span>
-    </a>
-    <a href="{{ contact_url or 'https://wa.me/916262716735' }}" target="_blank" class="s-btn">
-      <i class="fab fa-whatsapp" style="color:#25d366"></i><span>WhatsApp</span>
-    </a>
-  </div>
-
-  <!-- PASSWORD -->
   <div class="inp-label"><i class="fas fa-lock"></i>Enter Password</div>
   <div class="inp-wrap">
     <i class="fas fa-key"></i>
@@ -159,6 +142,21 @@ html,body{width:100%;overflow-x:hidden;background:var(--bg);color:var(--text);mi
   </div>
 
   <div class="err-box" id="pw-err"></div>
+
+  <div class="social-grid">
+    <a href="https://www.instagram.com/HACKRMAX" target="_blank" class="s-btn">
+      <i class="fab fa-instagram" style="color:#e1306c"></i><span>Instagram</span>
+    </a>
+    <a href="{{ youtube_url or 'https://www.youtube.com/@HACKRMAX' }}" target="_blank" class="s-btn">
+      <i class="fab fa-youtube" style="color:#f44336"></i><span>YouTube</span>
+    </a>
+    <a href="{{ telegram_url or 'https://t.me/HACKRMAX' }}" target="_blank" class="s-btn">
+      <i class="fab fa-telegram" style="color:#29b6f6"></i><span>Telegram</span>
+    </a>
+    <a href="{{ contact_url or 'https://wa.me/916262716735' }}" target="_blank" class="s-btn">
+      <i class="fab fa-whatsapp" style="color:#25d366"></i><span>WhatsApp</span>
+    </a>
+  </div>
 
   <button class="login-btn" id="loginBtn" onclick="doLogin()">
     <i class="fas fa-sign-in-alt"></i> LOGIN
@@ -172,14 +170,12 @@ html,body{width:100%;overflow-x:hidden;background:var(--bg);color:var(--text);mi
   </div>
 </div>
 
-<!-- SUCCESS -->
 <div class="success-overlay" id="success">
   <div class="success-check"><i class="fas fa-check"></i></div>
   <div class="success-text">ACCESS GRANTED!</div>
-  <div class="success-sub">WELCOME TO LP MOD60</div>
+  <div class="success-sub">WELCOME TO HACKRMAX</div>
 </div>
 
-<!-- POPUP -->
 <div id="lp-popup-wrap">
   <div class="lp-popup-box">
     <button class="lp-popup-close" onclick="closeLPopup()">✕</button>
@@ -190,7 +186,7 @@ html,body{width:100%;overflow-x:hidden;background:var(--bg);color:var(--text);mi
   </div>
 </div>
 
-<div class="credit">DESIGNED BY LP MOD60</div>
+<div class="credit">DESIGNED BY HACKRMAX</div>
 
 <script>
 // CLOCK
@@ -240,7 +236,7 @@ function togglePw(){
 // ENTER KEY
 document.getElementById('password').addEventListener('keydown',function(e){if(e.key==='Enter')doLogin();});
 
-// DO LOGIN — same logic as original
+// DO LOGIN
 async function doLogin(){
   const pw=(document.getElementById('password').value||'').trim();
   const err=document.getElementById('pw-err');
